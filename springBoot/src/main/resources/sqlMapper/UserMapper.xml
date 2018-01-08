@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.studyPro.dao.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.studyPro.model.User">
+        <id column="ID" jdbcType="BIGINT" property="id" />
+        <result column="USER_NAME" jdbcType="VARCHAR" property="userName" />
+        <result column="MOBILE" jdbcType="VARCHAR" property="mobile" />
+    </resultMap>
+
+    <insert id="insert" parameterType="com.studyPro.model.User">
+        INSERT INTO USER_INFO(USER_NAME, MOBILE, CREATE_TIME, UPDATE_TIME) VALUE (#{userName}, #{mobile}, NOW(), NOW())
+    </insert>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        select ID, USER_NAME, MOBILE from USER_INFO WHERE MOBILE = '13520819835'
+    </select>
+
+    <select id="findByNameLike" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select ID, USER_NAME, MOBILE from USER_INFO WHERE USER_NAME = #{name}
+    </select>
+</mapper>
