@@ -5,22 +5,22 @@ package com.studyPro.model;
  * @description
  * @date 2018/1/8 14:45
  */
-public class User {
+public class UserInfo {
 
     private Long id;
     private String userName;
     private String mobile;
 
-    public User() {
+    public UserInfo() {
     }
 
-    public User(Long id, String userName, String mobile) {
+    public UserInfo(Long id, String userName, String mobile) {
         this.id = id;
         this.userName = userName;
         this.mobile = mobile;
     }
 
-    public User(String userName, String mobile) {
+    public UserInfo(String userName, String mobile) {
         this.userName = userName;
         this.mobile = mobile;
     }

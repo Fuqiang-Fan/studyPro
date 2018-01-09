@@ -1,6 +1,6 @@
 package com.studyPro.dao;
 
-import com.studyPro.model.User;
+import com.studyPro.model.UserInfo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,15 +16,15 @@ import java.util.List;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
-public class UserMapperTest {
+public class UserDaoTest {
     @Autowired
-    UserMapper userMapper;
+    UserDao userDao;
 
     @Test
     public void insert() throws Exception {
         try {
-            User user = new User("fanfuqiang","13520819835");
-            userMapper.insert(user);
+            UserInfo userInfo = new UserInfo("fanfuqiang","13520819835");
+            userDao.insert(userInfo);
         }catch (Exception e) {
             e.printStackTrace();
         }
@@ -33,9 +33,9 @@ public class UserMapperTest {
     @Test
     public void findAll() throws Exception {
         try {
-            List<User> userList = userMapper.findAll();
-            for (User userTemp: userList){
-                System.out.println(userTemp.getId() + "， " + userTemp.getUserName() + "， " + userTemp.getMobile());
+            List<UserInfo> userInfoList = userDao.findAll();
+            for (UserInfo userInfoTemp : userInfoList){
+                System.out.println(userInfoTemp.getId() + "， " + userInfoTemp.getUserName() + "， " + userInfoTemp.getMobile());
             }
         }catch (Exception e) {
             e.printStackTrace();
@@ -45,9 +45,9 @@ public class UserMapperTest {
     @Test
     public void findByNameLike() throws Exception {
         try {
-            List<User> userList = userMapper.findByNameLike("fanfuqiang");
-            for (User userTemp: userList){
-                System.out.println(userTemp.getId() + "， " + userTemp.getUserName() + "， " + userTemp.getMobile());
+            List<UserInfo> userInfoList = userDao.findByNameLike("fanfuqiang");
+            for (UserInfo userInfoTemp : userInfoList){
+                System.out.println(userInfoTemp.getId() + "， " + userInfoTemp.getUserName() + "， " + userInfoTemp.getMobile());
             }
         }catch (Exception e) {
             e.printStackTrace();

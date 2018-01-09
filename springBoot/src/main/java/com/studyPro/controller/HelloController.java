@@ -20,7 +20,7 @@ public class HelloController {
 
     @RequestMapping("/hello/{myName}")
     String index(@PathVariable String myName) {
-        return "Hello "+myName+"!!!";
+        return "Hellopp "+myName+"!!!";
     }
 
     @RequestMapping("/hello/List")
@@ -30,5 +30,10 @@ public class HelloController {
         list.add("B");
         list.add("C");
         return list;
+    }
+
+    @RequestMapping("/hello/array")
+    String[] array() {
+        return new String[]{"1","2"};
     }
 }
