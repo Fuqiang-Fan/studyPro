@@ -1,10 +1,9 @@
-package com.studyPro.exception;
+package com.studyPro.springboot.exception;
 
-import com.studyPro.json.AjaxResult;
+import com.studyPro.springboot.json.AjaxResult;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.converter.HttpMessageNotReadableException;
-import org.springframework.stereotype.Repository;
 import org.springframework.validation.BindException;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;

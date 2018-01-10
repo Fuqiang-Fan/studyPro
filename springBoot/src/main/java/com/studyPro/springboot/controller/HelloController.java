@@ -1,4 +1,4 @@
-package com.studyPro.controller;
+package com.studyPro.springboot.controller;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.PathVariable;

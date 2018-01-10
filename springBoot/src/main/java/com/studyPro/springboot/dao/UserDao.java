@@ -1,6 +1,6 @@
-package com.studyPro.dao;
+package com.studyPro.springboot.dao;
 
-import com.studyPro.model.UserInfo;
+import com.studyPro.springboot.model.UserInfo;
 
 import java.util.List;
 

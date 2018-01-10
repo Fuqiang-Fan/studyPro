@@ -1,6 +1,6 @@
-package com.studyPro.controller;
+package com.studyPro.springboot.controller;
 
-import com.studyPro.exception.ServiceException;
+import com.studyPro.springboot.exception.ServiceException;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

@@ -1,4 +1,4 @@
-package com.studyPro.model;
+package com.studyPro.springboot.model;
 
 /**
  * @author 范富强

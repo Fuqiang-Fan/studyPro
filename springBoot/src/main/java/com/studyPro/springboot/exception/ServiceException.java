@@ -1,4 +1,4 @@
-package com.studyPro.exception;
+package com.studyPro.springboot.exception;
 
 /**
  * @author 范富强

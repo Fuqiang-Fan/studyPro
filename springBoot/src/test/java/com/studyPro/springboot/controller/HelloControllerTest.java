@@ -1,6 +1,5 @@
 package com.studyPro.springboot.controller;
 
-import com.studyPro.controller.HelloController;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;

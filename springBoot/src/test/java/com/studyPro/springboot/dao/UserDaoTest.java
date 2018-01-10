@@ -1,7 +1,6 @@
 package com.studyPro.springboot.dao;
 
-import com.studyPro.dao.UserDao;
-import com.studyPro.model.UserInfo;
+import com.studyPro.springboot.model.UserInfo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
