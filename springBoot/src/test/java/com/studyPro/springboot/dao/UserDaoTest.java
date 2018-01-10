@@ -1,5 +1,6 @@
-package com.studyPro.dao;
+package com.studyPro.springboot.dao;
 
+import com.studyPro.dao.UserDao;
 import com.studyPro.model.UserInfo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
