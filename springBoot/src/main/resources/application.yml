@@ -1,0 +1,19 @@
+# 服务器
+server:
+  port: 8011
+  session:
+    timeout: 10
+  tomcat:
+    uri-encoding: UTF-8
+
+# MVC
+spring:
+  mvc:
+    view:
+      # 页面默认前缀目录
+      prefix: /WEB-INF/views/
+      # 响应页面默认后缀
+      suffix: .jsp
+
+  profiles:
+    active: dev
