@@ -19,6 +19,8 @@
     <modules>
         <module>designPattern</module>
         <module>springBoot</module>
+        <module>springCloud</module>
+        <module>springCloud</module>
     </modules>
 
     <name>studyPro</name>
