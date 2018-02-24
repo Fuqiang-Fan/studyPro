@@ -2,8 +2,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8016/eureka/
+
 server:
-  port: 8763
+  port: 8769
 spring:
   application:
-    name: service-hi
+    name: service-feign
