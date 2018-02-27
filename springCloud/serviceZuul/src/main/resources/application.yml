@@ -11,8 +11,8 @@ spring:
 zuul:
   routes:
     api-a:
-      path： /api-a/**
-      serviceId: service-ribbon
+      path: /api-a/**
+      serviceId: service-hi-ribbon
     api-b:
       path: /api-b/**
       serviceId: service-feign
