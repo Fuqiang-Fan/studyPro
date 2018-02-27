@@ -16,6 +16,7 @@
         <module>eurekaServerClient</module>
         <module>serviceRibbon</module>
         <module>sericeFeign</module>
+        <module>serviceZuul</module>
     </modules>
 
     <dependencyManagement>
