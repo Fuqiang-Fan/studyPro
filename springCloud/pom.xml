@@ -17,6 +17,8 @@
         <module>serviceRibbon</module>
         <module>sericeFeign</module>
         <module>serviceZuul</module>
+        <module>configServer</module>
+        <module>configClient</module>
     </modules>
 
     <dependencyManagement>
