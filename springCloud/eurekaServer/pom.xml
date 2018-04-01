@@ -12,7 +12,7 @@
     <artifactId>eurekaServer</artifactId>
     <groupId>com.studyPro</groupId>
     <packaging>jar</packaging>
-    <name>springBoot</name>
+    <name>eurekaServer</name>
 
     <dependencies>
         <dependency>
