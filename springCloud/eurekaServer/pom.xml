@@ -10,9 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>eurekaServer</artifactId>
-    <groupId>com.studyPro</groupId>
-    <packaging>jar</packaging>
-    <name>eurekaServer</name>
 
     <dependencies>
         <dependency>
